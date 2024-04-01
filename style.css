@@ -15,6 +15,7 @@
     --green-800: #00474b;
     --light-green: #26c2ae;
     --white: #FFFFFF;
+    --green-houver: #9fe8df;
 }
 
 body {
@@ -79,8 +80,14 @@ main {
 }
 
 .conta:has(input:focus) div,
-.pessoas:has(input:focus) div {
+.conta:has(input:hover) div,
+.pessoas:has(input:focus) div,
+.pessoas:has(input:hover) div,
+.gorjeta #outra:focus div,
+.gorjeta #outra:hover  {
     outline: 2px solid var(--light-green);
+    cursor: pointer;
+
 }
 
 .gorjeta div {
@@ -102,7 +109,14 @@ main {
     border-radius: 0.3125rem;
     background-color: var(--green-800);
     color: var(--white);
+    cursor: pointer;
 }
+
+.gorjeta input [type="button"]:houver {
+    background-color: var(--green-houver);
+
+}
+
 
 .gorjeta #outra {
     width: 100%;
@@ -126,8 +140,7 @@ main {
 
 }
 
-.resultados div div 
-{
+.resultados div div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -171,35 +184,37 @@ main {
     padding-block: 0.5rem;
 
 }
-@media(min-widht: 920px) {
 
+@media(min-widht:920px) {
     body{
-        display:flex;
+        display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: 100svh;
         justify-content: center;
-        gap: 5rem;
+
     }
+
     header{
         padding: 0;
+        gap: 5rem;
     }
-
     main {
         display: flex;
         gap: 3rem;
-        border-radius: 1.5625rem;
+        padding: 3rem;
+        border-radius: 1.5625;
         max-width: 57.5rem;
         margin-inline: auto;
     }
     main section {
         width: 100%;
-
     }
     .conta input::-webkit-inner-spin-button,
-    .pessoa input::-webkit-inner-spin-button {
+    .pessoas input::-webkit-inner-spin-button {
         display: none;
     }
-    .gorjeta div {
+
+    .gorjeta div{
         grid-template-columns: 1fr 1fr 1fr;
     }
     .resultados{
@@ -207,10 +222,8 @@ main {
         flex-direction: column;
         justify-content: space-between;
         padding: 2.5rem;
-
     }
-    .resultados div > strong {
+    .resultados > strong {
         font-size: 3rem;
-        
     }
 }
