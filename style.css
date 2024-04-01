@@ -113,6 +113,11 @@ main {
     cursor: pointer;
 }
 
+.gorjeta .botao-ativo{
+    background-color: var(--green-800);
+    color: var(--white);
+}
+
 .gorjeta input[type="button"]:hover,
 .resultados button:hover {
     background-color: var(--green-hover);
