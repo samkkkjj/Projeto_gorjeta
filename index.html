@@ -18,7 +18,7 @@
                     <label for="conta">Conta</label>
                     <div>
                         <img src="./calculadora-de-gorjeta_base/images/icon-dollar.svg" alt="ícone do sifrão">
-                        <input type="number" name="conta" id="conta">
+                        <input type="number" name="conta" id="conta" placeholder="0">
                     </div>
                 </div>
                 
@@ -31,21 +31,44 @@
                         <input type="button" value="15%">
                         <input type="button" value="25%">
                         <input type="button" value="50%">
-                        <input type="number" name="outra" id="outra">
+                        <input type="number" name="outra" id="outra" placeholder="Outra">
                     </div>
                 </div>
 
                 <div class="pessoas">
-                    <label for="conta">Quantidade de Pessoas</label>
+                    <label for="pessoas">Quantidade de Pessoas</label>
                     <p>Não pode ser zero.</p>
                     <div>
                         <img src="./calculadora-de-gorjeta_base/images/icon-person.svg" alt="ícone da pessoa">
-                        <input type="number" name="conta" id="conta">
+                        <input type="number" name="pessoas" id="pessoas" placeholder="0">
 
                     </div>
                 </div>
                 </div>
             </form>
+        </section>
+
+
+        <section class="resultados">
+            <div class="gorjeta-total">
+                <p>
+                    <strong>Gorjeta</strong> <br>
+                    /pessoa
+                </p>
+                <p>
+                    <strong>$0.00</strong>
+                </p>
+            </div>
+
+            <div class="Total">
+                <p>
+                    <strong>Total</strong> <br>
+                    /pessoa
+                </p>
+                <p>
+                    <strong>$0.00</strong>
+                </p>
+            </div>
         </section>
     </main>
 </body>
